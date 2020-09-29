@@ -2,8 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: #E0485E;  
-    font-family: 'Roboto', sans-serif;
+    background-color: #a94064;  
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -19,10 +19,10 @@
 
 /* header styling */
 .container h1 {
-    font-size: 70px;
+    font-size: 75px;
     text-align: center;
     color: #eeeeee;
-    font-weight: 350;
+    font-weight: 300;
     letter-spacing: 0.5rem;
     /* header selection  */
     -webkit-touch-callout: none;
@@ -32,6 +32,13 @@
     user-select: none;
 }
 
+
+.ft {
+    background-color: transparent;
+    position: relative;
+    float: right;
+    top: 95%;
+}
 
 /* background color for socials */
 .socials, #social, .container h1 {
@@ -43,7 +50,7 @@
 #social{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    padding-top: 10px;
+    padding-top: 5px;
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -66,7 +73,7 @@
 
 /* on hover animation for images */
 #social img:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12.5px);
 }
 
 
@@ -76,4 +83,13 @@
     height: 100vh;
     z-index: 9999;
     overflow: hidden;
+}
+
+
+#footer {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    padding: 15px 15px;
+    color: #ddd;
+    background-color: transparent;
 }
