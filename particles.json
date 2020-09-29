@@ -34,7 +34,7 @@
             "random": false,
             "bounce": false,
             "attract": {
-                "enable": false
+                "enable": true
             }
         }
     },
