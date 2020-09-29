@@ -43,6 +43,7 @@
 /* background color for socials */
 .socials, #social, .container h1 {
     background-color: transparent;
+    text-decoration: none;
 }
 
 
@@ -52,7 +53,6 @@
     padding-right: 0.5rem;
     padding-top: 5px;
     display: inline-block;
-    text-decoration: none;
     text-align: center;
     border: none;
     /* icon selection */
@@ -70,12 +70,12 @@
     transition-duration: 0.2s;
 }
 
-
 /* on hover animation for images */
 #social img:hover {
+    transition: all 0.35s ease;
     transform: translateY(-12.5px);
+    filter: invert(90%) hue-rotate(70deg) brightness(90%) contrast(90%);
 }
-
 
 /* particles.js background */
 #particles-js {
