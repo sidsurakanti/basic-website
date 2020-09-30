@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +8,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="icon" href="/assets/logo.png">
-    <title>Izzy | Home</title>
+    <title>Izzy</title>
 </head>
+
 <body>
-    <div id="particles-js">
-        <div class="container">
-          <h1>Izzy</h1>
-          <div class="socials">
-            <a href="https://github.com/izzy-q/" id="social" target="_blank">
-              <img src="/assets/github.svg"/>
-            </a>
-            <a href="https://discord.com/users/521872289231273994"  alt="discord" id="social" target="_blank">
-              <img src="/assets/discord.svg"/>
-            </a>
-            <a href="https://twitter.com/izzywq" id="social" target="_blank">
-              <img src="/assets/twitter.svg"/>
-            </a>
-          </div>
-        </div>
-        <div class="ft">
-          <p id="footer">Crafted with <3 by Izzy</p>
-        </div>
+  <div id="particles-js">
+    <div class="container">
+      <!-- header -->
+      <h1>Izzy</h1>
+      
+      <!-- socials -->
+      <div class="socials">
+        <a href="https://github.com/izzy-q/" id="github" class="socials" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://twitter.com/izzywq" id="twitter" class="socials" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://discord.com/users/521872289231273994" class="socials" alt="discord" id="discord" target="_blank">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+
     </div>
 
+    <!-- footer -->
+    <div class="footer">
+      <span id="footer">Crafted with <3 by Izzy</span>
+    </div>
 
-    <!-- particles js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </div>
 
-    <script>
-      particlesJS.load('particles-js', 'particles.json', function(){
-      });
-    </script>
+  <!-- particles js -->
+  <script src="https://kit.fontawesome.com/3711e34cc0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function(){});
+  </script>
+
 </body>
+
 </html>

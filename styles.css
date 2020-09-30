@@ -1,9 +1,15 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: #a94064;  
+    background-color: #38363D;
     font-family: 'Poppins', sans-serif;
+    /* disabling selection*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -11,7 +17,7 @@
 .container {
     position: absolute;
     top: 50vh;
-    left: 50%;
+    left: 50vw;
     transform: translate(-50%, -50%);
     background-color: transparent;
 }
@@ -19,77 +25,89 @@
 
 /* header styling */
 .container h1 {
-    font-size: 75px;
+    font-size: 125px;
     text-align: center;
-    color: #eeeeee;
+    color: #ddd;
     font-weight: 300;
-    letter-spacing: 0.5rem;
-    /* header selection  */
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    letter-spacing: 0.75rem;
 }
 
-
-.ft {
-    background-color: transparent;
-    position: relative;
-    float: right;
-    top: 95%;
-}
 
 /* background color for socials */
-.socials, #social, .container h1 {
+.socials i,
+.socials,
+.container h1 {
     background-color: transparent;
     text-decoration: none;
 }
 
 
 /* icon styling */
-#social{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 5px;
+.socials {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 10px;
     display: inline-block;
     text-align: center;
     border: none;
-    /* icon selection */
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    outline: none;
 }
 
 
 /* background color and transtion styling for images */
-#social img {
-    background-color: transparent;
-    transition-duration: 0.2s;
+.socials i {
+    transition: 0.5s;
+    font-size: 48px;
+    color: #ddd;
 }
 
-/* on hover animation for images */
-#social img:hover {
-    transition: all 0.4s ease;
-    transform: translateY(-12.5px);
-    filter: invert(90%) hue-rotate(70deg) brightness(90%) contrast(90%);
+
+/* footer styling */
+.footer {
+    background-color: transparent;
+    position: relative;
+    float: right;
+    top: 97vh;
 }
+
+
+/* on hover animations for images */
+#github i:hover {
+    transition: all 0.5s ease;
+    transform: translateY(-15px);
+    color: #000000 !important;
+}
+
+
+#twitter i:hover {
+    transition: all 0.5s ease;
+    transform: translateY(-15px);
+    color: #00acee !important;
+}
+
+
+#discord i:hover {
+    transition: all 0.5s ease;
+    transform: translateY(-15px);
+    color: #7289da !important;
+}
+
 
 /* particles.js background */
-#particles-js {
-    width: 100%;
+#particles-js canvas{
+    width: 100vw;
     height: 100vh;
-    z-index: 9999;
+    z-index: -1 !important;
     overflow: hidden;
+    position: absolute;
+    pointer-events: all;
 }
 
 
 #footer {
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
-    padding: 15px 15px;
+    padding-right: 10px;
     color: #ddd;
     background-color: transparent;
 }
